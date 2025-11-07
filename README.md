@@ -13,7 +13,7 @@ De beheerfuncties zijn te vinden in het dasboard van wordpress menu-tem= vnve
 Onder dit menu staan de volgende subitems:
 
 ### settings
-De plugin bevat de volgende parameters.
+De plugin bevat de volgende settings.
 
 *   organisatie - de naam van de organisatie
 *   introductie - introductietekst van de organisatie
@@ -22,6 +22,7 @@ De plugin bevat de volgende parameters.
 *   filetypes - Welke type bestand kan een artikel hebben
 *   docdir - map voor artikelen beschreven vanaf de website root vanaf plugins/vnve
 *	helpdir - map helpbestanden
+
 settings tbv inschrijfformulier
 *   emailadres ledenadministratie - Hier wordt het formulier naar toe gestuurd.
 *   interessegebied - lijst van interessegebieden
