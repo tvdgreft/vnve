@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+	<field
+		name="title"
+		type="text"
+		label="titel"
+		size="50"
+		required="true"
+	/>
+	<field
+		name="status"
+		type="dropdown"
+		label="status"
+		size="100"
+		required="true"
+		options="open,restricted"
+		default="open"
+	/>
+	<field
+		name="rubric"
+		type="text"
+		label="rubriek"
+		size="100"
+		required="true"
+	/>
+	<field
+		name="document"
+		type="wordpressmedia"
+		label="Welk bestand(optioneel)"
+		size="100"
+		accept="pdf,jpg,png"
+	/>
+	<field
+		name="doctype"
+		type="dropdown"
+		label="soort document"
+		size="100"
+		required="true"
+		options="pdf,image"
+		default="image"
+	/>
+	</fieldset>
+</form>

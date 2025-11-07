@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic">
+			<field
+				name="organisation"
+				type="text"
+				label="organisatie"
+				description="naam van de organisatie"
+			/>
+			<field
+				name="intro"
+				type="textarea"
+				filter="raw"
+				label="introductie"
+				description="Beschrijving van de organisatie"
+			/>
+			<field
+				name="numrows"
+				type="text"
+				default = "10,20,50,100"
+				label="records per pagina"
+				description="Aantal records dat getoond wordt in de tabel van verwijzingen"
+			/>			
+			<field
+				name="maxdocsize"
+				type="text"
+				default="30000"
+				label="maxdocsize in kb"
+				description="maximaal grootte van documenten in Kbytes"
+			/>
+			<field
+				name="filetypes"
+				type="text"
+				default="docx,pdf"
+				label="filetypes"
+				description="toegestane filetypes voor documenten"
+			/>
+			<field
+				name="docdir"
+				type="text"
+				default="/plugins/system/vnve/documents"
+				label="docdir"
+				description="pad van map voor ducumenten vanaf root site"
+			/>
+			<field
+				name="helpdir"
+				type="text"
+				default="/plugins/system/vnve/help"
+				label="helpbestanden"
+				description="pad van map voor helpbestanden"
+			/>
+		</fieldset>
+		<fieldset name="leden" label="leden">
+			<field
+				name="emailleden"
+				type="text"
+				default="tvdgreft@pranamas.nl"
+				label="emailadres ledenadministratie"
+				description="emailadres ledenadministratie"
+			/>
+			<field
+				name="interessegebied"
+				type="text"
+				default="VN,Europa CEPT,Europa voorlopers"
+				label="interessegebied"
+				description="interessegebied"
+			/>
+			<field
+				name="taken"
+				type="text"
+				default="bestuur,redactioneel / promotie / pers,internet / website,veilingen,beurzen organiseren / stand bezetting"
+				label="vereningingstaken"
+				description="taken uit te voeren in de vereniging"
+			/>
+			<field
+				name="ledenformfile"
+				type="text"
+				default="/plugins/system/vnve/tmp/lid"
+				label="ledenformulier"
+				description="file voor ledenformulier"
+			/>
+		</fieldset>
+</form>

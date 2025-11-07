@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+	<field
+		name="voornaam"
+		type="text"
+		label="voornaam"
+		size="32"
+        default="Theo"
+	/>
+	<field
+		name="voorvoegsel"
+		type="text"
+		label="voorvoegsel"
+		size="32"
+        default="van der"
+	/>
+	<field
+		name="achternaam"
+		type="text"
+		label="achternaam"
+		size="32"
+        default="Greft"
+	/>
+    </fieldset>
+	<fieldset>
+	<field
+		name="email"
+		type="text"
+		label="email"
+		size="32"
+		required="true"
+		class="email"
+		classerror="geldig email adres invullen"
+        default="tvdgreft@connect2music.nl"
+	/>
+	<field
+		name="pairsamount"
+		type="radio"
+		label="bedrag"
+		size="10"
+		required="true"
+		pairs='{"€ 5":"5","€ 10":"10","€ 25":"25"}'
+		other="ander bedrag €"
+	/>
+    <field
+		name="amount"
+		type="radio"
+		label="bedrag"
+		size="10"
+		required="true"
+		options="5,20,20,25"
+		other="ander bedrag"
+	/>
+	</fieldset>
+</form>

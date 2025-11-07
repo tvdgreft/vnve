@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic">
+			<field
+				name="organisation"
+				type="text"
+				label="organisatie"
+				description="naam van de organisatie"
+			/>
+			<field
+				name="intro"
+				type="text"
+				filter="raw"
+				label="introductie"
+				description="Beschrijving van de organisatie"
+			/>
+		</fieldset>
+</form>
