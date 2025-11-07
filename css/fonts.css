@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Larke_Neue_Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('https://localhost/vn-ve-wordpress/wp-content/plugins/vnve/fonts/LarkeNeueRegular.woff') format('woff');
+	src: url('https://localhost/vn-ve-wordpress/wp-content/plugins/vnve/fonts/LarkeNeueRegular.woff2') format('woff2');
+	src: url('https://localhost/vn-ve-wordpress/wp-content/plugins/vnve/fonts/LarkeNeueRegular.ttf') format('truetype');
+}
