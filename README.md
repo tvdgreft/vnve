@@ -9,38 +9,58 @@ Deze plugin is gemaakt voor de postzegelvereninging vn-ve. Hiermee kan een overz
 
 ## Beheer
 
-Voor de beheerfunctie moet een shortlink worden aangemaakt in een artikel. Dat ziet er als volgt uit:  
-{vnve prefix="...." function="grenzenloos" task="manager"}  
-Maak een menu naar dit artikel en autoriseer dit menu voor de beheerder
+De beheerfuncties zijn te vinden in het dasboard van wordpress menu-tem= vnve
+Onder dit menu staan de volgende subitems:
 
-## zoekscherm
+### settings
+De plugin bevat de volgende parameters.
 
-Voor het zoekscherm moet een shortlink worden aangemaakt in een joomla artikel. Dat ziet er als volgt uit:  
-{vnve prefix="..." function="grenzenloos" task="publicsearch"}  
+*   organisatie - de naam van de organisatie
+*   introductie - introductietekst van de organisatie
+*	records per pagina - keuzes die gemaakt kunnen worden uit het aantal records per pagina bij het zoeken
+*   maxdocsize - Maximale grootte van een artikel. Let wel dit moet lager of gelijk zijn aan wat in php is vastgelgd
+*   filetypes - Welke type bestand kan een artikel hebben
+*   docdir - map voor artikelen beschreven vanaf de website root vanaf plugins/vnve
+*	helpdir - map helpbestanden
+settings tbv inschrijfformulier
+*   emailadres ledenadministratie - Hier wordt het formulier naar toe gestuurd.
+*   interessegebied - lijst van interessegebieden
+*   vereningingstaken - list van verenigingstaken
+*   ledenformulier - map waar verzonden formulieren worden opgeslagen
 
-Maak een menu naar dit artikel
+### grenzenloos
 
-De inhoud van de prefix mag een willekeurige tekst zijn. Zo kunnen er ook meerdere overzichten gemaakt worden.
+Dit is de beheersfunctie van Grenzenloos. De beheerder kan hiet artikelen beheren.
+In de pagina die getoond wordt staat een 'help' knop. Wanneer hier op wordt geklikt wordt een helpbestand vnve/doc/manual_grenzenloos_manager.htlm getoond.
+
+## frontend functies
+
+### beheer grenzenloos
+Voor de frontend kan ook de beheersfunctie van Grenzenloos, in een pagina worden opgenomen. Deze pagina moet dan wel kunnen worden geautoriseerd voor de beheerder.
+In een artikel moet de volgende shortlink worden opgenomen:
+[vnve prefix="grens" function="grenzenloos" task="manager"]
+
+
+### zoeken in grenzenloos voor eindgebruikers
+
+Voor het zoekscherm moet een shortlink worden aangemaakt in een artikel. Dat ziet er als volgt uit:  
+{vnve prefix="grens" function="grenzenloos" task="publicsearch"}
+
+### lidmaatschapsformulier
+
+In de vnve-plugin zit ook een functie om een inschrijformulier te tonen. Nadat deze is ingevuld wordt deze verzonden naar.
+De shortlink ziet er als volgt uit:
+[vnve prefix="grens" function="leden" task="formulier"]
 
 ## database
 
 Er wordt automatisch een tabel aangemaakt in de databank die de volgende naam heeft:  
-{extension}\_grenzenloos  
-{extension} is de opgegeven extensie in de shortlinks in de joomla pagina.
+grens_grenzenloos  
 
 ## mappen
 
 In de map documents in de plugindirectory worden de artikelen opgeslagen.
 
-## plugin pramaters
-
-De plugin bevat de volgende parameters.
-
-*   organisatie - de naam van de organisatie
-*   introductie - introductietekst van de organisatie
-*   maxdocsize - Maximale grootte van een artikel
-*   filetypes - Welke type bestand kan een artikel hebben
-*   docdir - map voor artikelen beschreven vanaf de website root
 
 ## Initial Load
 
